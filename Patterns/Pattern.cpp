@@ -1,3 +1,5 @@
+// Patttern Question using Loops and Functions
+
 #include <iostream>
 using namespace std;
 void pattern1(){	
