@@ -1,3 +1,8 @@
+
+
+//PART 6 A PART ONLY
+
+
 #include <iostream>
 using namespace std;
 int
