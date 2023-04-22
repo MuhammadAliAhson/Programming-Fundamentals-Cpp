@@ -1,3 +1,7 @@
+
+// Part 8
+
+
 #include <iostream>
 using namespace std;
 void pattern1(){	
