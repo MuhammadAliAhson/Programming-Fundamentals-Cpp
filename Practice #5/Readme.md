@@ -31,3 +31,23 @@ The loop continues until the user chooses to stop by pressing 'N'.
 - The program assumes that the user will input valid and accurate data. 
 
 - The program does not take into account additional fees or taxes that may apply to the loan.
+
+
+
+
+## Q5 Part 2
+
+
+Sure, here are the step-by-step instructions for the loan management program:
+
+1. Open your preferred code editor and create a new file.
+2. Copy and paste the code from Part 1 and Part 2 into the new file.
+3. Save the file with a name of your choice and with the file extension .cpp.
+4. Compile and run the program to see the output.
+5. When the program runs, it will prompt you to enter the loan amount and the number of installments you want.
+6. After entering these values, the program will prompt you to enter the due amount, due date, paid amount, and paid date for each installment.
+7. Enter the values as prompted and press Enter after each input.
+8. Once you have entered all the installment details, the program will calculate the penalty and display the installment details, penalty, total balance, and charges.
+9. The program will then prompt you if you want to continue with another loan, if yes then enter 'Y' else enter anything else to exit the program.
+
+Note: The program is designed to handle only 50 installments. If you need to enter more installments, you will need to modify the program accordingly.
