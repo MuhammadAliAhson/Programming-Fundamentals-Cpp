@@ -13,16 +13,6 @@ int main(){
 	cout<<setw(5)<<setprecision(4)<<b<<endl;
 	cout<<fixed<<c<<endl;
 	cout<<left<<setw(7)<<d;
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	return 0;
 }
