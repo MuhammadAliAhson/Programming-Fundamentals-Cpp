@@ -29,17 +29,5 @@ int main(){
   cout<<"Day 3 :  "<<c<<endl;
   cout<<"Total :  "<<a+b+c;
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	return 0;
 }
