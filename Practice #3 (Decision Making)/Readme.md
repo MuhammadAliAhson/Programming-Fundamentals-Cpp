@@ -118,3 +118,158 @@ Overall, the program is correctly implemented and should be able to correctly ca
 
 
 ##    Q5.cpp 
+
+
+# Using C++ to create a two-function program that takes input from a user and displays the color.
+
+This program is designed to take input from a user and display a color based on the number entered by the user. The program is written in C++ and contains two functions that help to achieve this goal. The first function takes input from the user and returns a string that represents the color. The second function is similar to the first function and takes input from the user, but returns a different color string.
+
+## Requirements
+
+- C++ Compiler
+
+## Installation
+
+1. Download and install a C++ compiler if you don't have one installed already. 
+
+2. Clone the repository using the command below:
+
+```
+git clone https://github.com/Abdelrahman-Abdelgawad/Simple-Program-Using-CPP.git
+```
+
+## Usage
+
+1. Compile the code using the C++ compiler.
+
+2. Run the executable file.
+
+3. Enter a number between 1 and 81 when prompted.
+
+4. The program will display a color based on the number entered.
+
+## Functionality of the code
+
+1. The code imports two libraries `string` and `iostream` which are used to support the program.
+
+2. Two functions named `one()` and `two()` are defined.
+
+3. Both functions have a return type of string and are used to display colors based on the user input.
+
+4. The functions declare three strings named `x`, `y`, and `z` that represent colors.
+
+5. The user is prompted to enter a number between 1 and 81.
+
+6. The program checks which range the entered number falls into and based on the range, the program returns a string representing a color.
+
+7. The color is returned as output by the function.
+
+## Functionality of each function
+
+1. `one()` function
+
+    - The function takes input from the user and checks which range the entered number falls into.
+
+    - Based on the range, the function returns a string representing a color.
+
+2. `two()` function
+
+    - The function takes input from the user and checks which range the entered number falls into.
+
+    - Based on the range, the function returns a string representing a color. 
+
+## Example Usage
+
+```c++
+#include <iostream>
+#include "functions.h"
+using namespace std;
+int main()
+{
+    cout<<"Function one output: "<<one()<<endl;
+    cout<<"Function two output: "<<two()<<endl;
+    return 0;
+}
+```
+
+## Example Output
+
+```bash
+Enter a number between 1-81
+50
+Function one output: Grey Color
+Enter a number between 1-81
+27
+Function two output: Blue Color
+```
+
+## Q6.cpp (A)
+
+README - Data Package Pricing Calculator
+
+This program calculates the pricing for internet data packages based on the user input. The user is required to enter their data usage in GBs and select their package type (A, B, or C) in capital letters. The program will then display the original price of the package and the data limit. If the user exceeds their data limit, the program will also calculate the additional data used and the price for that data.
+
+To use the program, follow these steps:
+
+1. Open a C++ IDE or a text editor to create a new file.
+2. Copy and paste the provided code into the new file.
+3. Save the file with a relevant name, such as "data_package_pricing.cpp".
+4. Compile and run the program.
+5. The program will greet the user with a welcome message and prompt them to enter their data usage in GBs.
+6. Enter the data usage in GBs and press enter.
+7. The program will then prompt the user to enter their package type (A, B, or C) in capital letters.
+8. Enter the package type and press enter.
+9. The program will display the original price of the package and the data limit.
+10. If the user has exceeded their data limit, the program will also display the additional data used and the price for that data.
+11. The program will then terminate.
+
+Note: The provided code only includes Part 6a of the program. If you want to use the full program, please refer to the complete code.
+
+## Q6.cpp  (B)
+
+
+
+
+This is a C++ program that takes input from the user for the amount of data used in Gbs and the package type (A, B, or C) and calculates the total price for the internet usage. The program also provides additional information about the package types.
+
+Here's how the program works:
+- First, the program greets the user and asks for input for the amount of data used in Gbs and the package type.
+- Depending on the package type entered by the user, the program provides additional information about the package and calculates the total price for the internet usage.
+- If the package type is A, the program checks if the data used is more than 1.00 Gbs and calculates the additional price accordingly.
+- If the package type is B, the program checks if the data used is more than 2.5 Gbs and calculates the additional price accordingly.
+- If the package type is C, the program informs the user that the package has unlimited data and provides information on the cost savings if Package A or Package B were chosen.
+- Finally, the program displays the total price for the internet usage.
+
+Note: The program assumes that the user enters a valid package type (A, B, or C) and a valid amount of data used in Gbs. If the user enters invalid input, the program may produce unexpected results.
+
+Overall, the program is well-structured and easy to follow. However, it could be improved by adding error handling and input validation to ensure that the user enters valid input. Additionally, the program could be extended to include more package types or additional features such as discounts or promotions.
+
+
+## Q7.cpp
+
+
+This program simulates an ordering system for a fast-food restaurant. The user is prompted to choose between three options: Burgers, Pizzas, and Sandwiches. Then, the user is asked to select a specific item from the chosen category and the quantity they want to order. Finally, the program displays the total price of the order.
+
+The program uses a switch statement to handle the user's input and call the appropriate function to calculate the price. The price function takes two arguments, the number of items ordered and the unit price, and displays the total price.
+
+The program has a few issues that need to be addressed. Firstly, the price function is declared with a return type of int, but it doesn't return anything. This needs to be fixed. Secondly, the price function is called without being defined, causing a compilation error. Finally, there are some formatting issues with the output, such as the use of double backslashes and inconsistent spacing.
+
+Overall, the program could be improved by using better variable names, providing clearer instructions to the user, and adding error handling for invalid input.
+
+##  Q8.cpp
+
+This program appears to be a currency exchange program that converts an amount in Pakistani Rupees (Pkr) into various denominations of banknotes based on user input for their preferred banknote.
+
+The program prompts the user to enter an amount in Pkr and their preferred note denomination, which is then passed to the `h()` function. This function calculates the number of banknotes of each denomination required to make up the requested amount based on the user's preferred banknote.
+
+The function then outputs the number of each denomination of banknote required to make up the amount entered by the user.
+
+There are some issues with the program, including the fact that the variable `z` is used to store the user's preferred banknote denomination, but it is also used as a temporary variable to store the difference between the number of banknotes of the preferred denomination and 200, which is confusing.
+
+Also, there is no error checking for invalid input, such as entering a negative amount or a banknote denomination that is not supported.
+
+Finally, the function should have a return type since it is returning an integer value. The `int` keyword should be added before the function name `h()` to specify its return type.
+
+In summary, this program needs to be improved in terms of variable naming, input validation, and error handling to make it more robust and user-friendly.
+
+
