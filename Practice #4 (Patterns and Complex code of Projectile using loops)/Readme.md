@@ -45,3 +45,47 @@ This program calculates the cosine of a given angle using the Taylor series expa
 
 
 ## Practice #4 Q2
+
+
+This program is a simple calculator that performs basic arithmetic operations such as addition, subtraction, multiplication, and division. It has two parts, and we will describe each part step-by-step.
+
+Part 1:
+
+1. The program starts by including two C++ libraries - `iostream` and `cmath`.
+
+2. The `using namespace std` statement is used to avoid writing `std::` before each standard library function.
+
+3. Three functions are declared and defined - `calcTerm()`, `sumTerms()`, and `testFunction()`.
+
+4. The `main()` function prompts the user to enter the angle and the number of terms.
+
+5. The `for` loop calls the `calcTerm()` function with the angle and the current term number as arguments.
+
+6. The `input` variable is assigned the value returned by `calcTerm()`.
+
+7. The `sumTerms()` function is called with the `input` variable as an argument.
+
+8. The output is displayed using `cout`.
+
+9. Finally, the `testFunction()` function is called to test the output of the program with the `cos()` function.
+
+Part 2:
+
+1. The program starts by including two C++ libraries - `iostream` and `conio.h`.
+
+2. The `using namespace std` statement is used to avoid writing `std::` before each standard library function.
+
+3. Four functions are declared - `add()`, `sub()`, `mul()`, and `div()`.
+
+4. The `add()`, `sub()`, `mul()`, and `div()` functions are defined to perform addition, subtraction, multiplication, and division, respectively.
+
+5. The `main()` function prompts the user to enter two digits.
+
+6. The `add()` and `sub()` functions are called with the two digits entered by the user as arguments.
+
+7. The `mul()` and `div()` functions are commented out, indicating that they are not yet implemented. 
+
+8. The program returns 0, indicating successful execution.
+
+
+## Practice #4 Q3
