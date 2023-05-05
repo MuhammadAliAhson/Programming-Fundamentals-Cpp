@@ -125,3 +125,78 @@ Enter a integer :28
 ```
 
 This is because 6 and 28 are the only perfect numbers between 2 and 28.
+
+
+## Practice #4 Q4
+
+
+### Part 1
+
+This program calculates the value of cosine of an angle using the Taylor series expansion formula. It takes two inputs from the user, the angle and the number of terms to be used in the expansion. The program uses a for loop to iterate over each term in the series, and calculates the sum of terms. 
+
+#### How to run the program:
+
+1. Open a C++ compiler.
+2. Copy the code into the compiler.
+3. Compile and run the program.
+4. Enter the angle and the number of terms when prompted.
+
+### Part 2
+
+This program contains functions for addition, subtraction, multiplication, and division of two numbers. The program takes two integer inputs from the user and performs the requested operation. The addition and subtraction functions use bitwise operators to perform their calculations. 
+
+#### How to run the program:
+
+1. Open a C++ compiler.
+2. Copy the code into the compiler.
+3. Compile and run the program.
+4. Enter the two integers when prompted.
+5. Choose the operation to perform when prompted.
+
+### Part 3
+
+This program checks whether a number is a perfect number or not. A perfect number is a positive integer that is equal to the sum of its proper divisors (excluding itself). The program prompts the user to enter an integer, and then iterates over all integers from 2 to the input number to check if they are perfect numbers. 
+
+#### How to run the program:
+
+1. Open a C++ compiler.
+2. Copy the code into the compiler.
+3. Compile and run the program.
+4. Enter an integer when prompted.
+
+### Part 4
+
+This program prints a graphical representation of a polynomial function. It prompts the user to enter two values, x and n. The program then calculates the value of the function for each value of x, and prints the function as a series of asterisks. The number of asterisks printed for each value of x is proportional to the value of the function. 
+
+#### How to run the program:
+
+1. Open a C++ compiler.
+2. Copy the code into the compiler.
+3. Compile and run the program.
+4. Enter the values of x and n when prompted.
+
+
+
+
+## Practice #4 Q5
+
+
+
+
+
+
+## Practice #4 Q6
+
+
+
+
+
+
+## Practice #4 Q7
+
+
+
+
+
+
+## Practice #4 Q8
