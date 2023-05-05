@@ -89,3 +89,39 @@ Part 2:
 
 
 ## Practice #4 Q3
+
+
+# Explanation of Part 3
+
+The code in Part 3 is a C++ program to find all the perfect numbers that are less than or equal to a given integer `x`. 
+
+### Function Description
+
+The code has two functions:
+
+1. `int checkPerfectNumber(int i)`: This function takes an integer `i` as input, checks if it's a perfect number or not, and returns 0.
+2. `int main()`: This function is the main driver function of the program, which takes an integer `x` as input, and iterates over all the integers between 2 and `x`. For each integer `i` between 2 and `x`, it calls the `checkPerfectNumber(i)` function to check if it's a perfect number or not.
+
+### Algorithm for Perfect Number
+
+A number is said to be a perfect number if it is equal to the sum of its proper divisors (excluding the number itself). For example, 6 is a perfect number as its proper divisors are 1, 2, and 3, and their sum is 6.
+
+### Explanation of `checkPerfectNumber()` function
+
+The `checkPerfectNumber()` function takes an integer `i` as input, finds all the divisors of `i` (excluding `i` itself), adds them, and checks if the sum is equal to `i`. If it's equal, then `i` is a perfect number, and the function prints `i` and returns 0. Otherwise, it just returns 0.
+
+### Explanation of `main()` function
+
+The `main()` function takes an integer `x` as input using `cin`, and then iterates over all the integers between 2 and `x` using a `for` loop. For each integer `i` between 2 and `x`, it calls the `checkPerfectNumber(i)` function. If `i` is a perfect number, then the `checkPerfectNumber()` function will print `i`.
+
+### Example Output
+
+Let's say the user enters `28` as the input for `x`. The program will iterate over all the integers between 2 and 28, and print all the perfect numbers it finds. The output will be:
+
+```
+Enter a integer :28
+6
+28
+```
+
+This is because 6 and 28 are the only perfect numbers between 2 and 28.
