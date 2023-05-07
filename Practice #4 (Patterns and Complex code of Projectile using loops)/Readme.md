@@ -208,7 +208,87 @@ The output of the program will be the binary, octal, and hexadecimal representat
 
 ## Practice #4 Q6
 
+## Hotel Room Occupancy
 
+This program helps to calculate the room occupancy and percentage of occupancy of a hotel with floors and rooms.
+
+### How to use the program?
+
+1. The user inputs the number of floors the hotel has.
+2. For each floor, the user inputs the number of rooms and the number of occupied rooms.
+3. The program then calculates the total number of rooms, the number of occupied rooms, the number of unoccupied rooms, and the percentage of rooms that are occupied.
+4. The results are printed on the console.
+
+### How the program works?
+
+The program takes input from the user regarding the number of floors, rooms and occupied rooms on each floor.
+It calculates the total number of rooms and occupied rooms, and the number of unoccupied rooms.
+It also calculates the percentage of rooms that are occupied.
+
+The program checks if the input is valid or not. The number of rooms on each floor should be greater than or equal to 10, else it is considered invalid.
+If the input is invalid, the program prints an error message and breaks out of the loop.
+
+### Code walkthrough
+
+The program starts with including the necessary header files.
+
+```c++
+#include <iostream>
+using namespace std;
+```
+
+In the `main` function, we declare the required variables and take input from the user for the number of floors.
+
+```c++
+int main(){
+    int n,w=0,rooms=0,oc_rooms=0,d=0;
+    float o;
+    cout<<"Enter the number of floors the hotel have : "<<endl;
+    cin>>n;
+```
+
+If the input is valid, the program executes the `for` loop for the given number of floors. Inside the loop, we take input from the user for the number of rooms and the number of occupied rooms on each floor.
+
+```c++
+    if(n>=1){
+    for(n;n>0;n--){
+            cout<<"Enter the number  of rooms at "<<n<<" floor. ";
+            cin>>w;
+            if(w>=10){
+            rooms=rooms+w;
+            cout<<endl;
+            cout<<"Enter the number of occupied rooms at "<<n<<" floor. ";
+            cin>>d;
+            oc_rooms=oc_rooms+d;
+            cout<<endl;
+        }
+        else{
+        	cout<<"Invalid input for the rooms "<<endl;
+		break;}
+    }
+```
+
+If the input is valid, the program then calculates the total number of rooms, the number of occupied rooms, the number of unoccupied rooms, and the percentage of rooms that are occupied.
+
+```c++
+    if(w>=10){
+    cout<<"Total rooms "<<rooms<<endl;
+    cout<<"Occupied rooms "<<oc_rooms<<endl;
+    cout<<"Unoccupied rooms "<<rooms-oc_rooms<<endl;
+    o=(oc_rooms/rooms);
+    cout<<"The percentage of rooms that are occupied "<<o*100<<"%"<<endl;
+}
+```
+
+If the input is invalid, the program prints an error message.
+
+```c++
+else {
+	cout<<"Invalid input."<<endl;
+}
+    return 0;
+}
+```
 
 
 
