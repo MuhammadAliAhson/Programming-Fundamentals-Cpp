@@ -355,3 +355,62 @@ This program should now produce correct output and run without errors.
 
 
 ## Practice #4 Q8
+
+Sure, here is a step-by-step guide to the code:
+
+1. The code starts with including the `iostream` library to enable input/output operations in the console.
+
+2. The `pattern1` function is defined to print the pattern of "Part A" shown below:
+```
+\\!!!!!!!!!!
+\\\\!!!!!!!!
+\\\\\\!!!!!!
+\\\\\\\\!!!!
+\\\\\\\\\\!!
+\\\\\\\\\\\\
+```
+The pattern is created using nested loops:
+- The outer `while` loop runs from 0 to 5, which controls the number of rows.
+- The first inner `while` loop prints `\\` characters based on the current row number.
+- The second inner `while` loop prints `!` characters based on the current row number.
+- The third inner `while` loop prints `//` characters based on the current row number.
+- The last line of each row is ended by an `endl` statement to move the cursor to the next line.
+
+3. The `pattern2` function is defined to print the pattern of "Part B" shown below:
+```
+******////\\\\\\\\******
+*****//////\\\\\\\\*****
+****////////\\\\\\\\****
+***//////////\\\\\\\\***
+**////////////\\\\\\\\**
+*//////////////\\\\\\\\*
+```
+The pattern is created using nested loops:
+- The outer `for` loop runs from 7 to 1, which controls the number of rows.
+- The first inner `for` loop prints `*` characters based on the current row number.
+- The second inner `for` loop prints a number of spaces based on the current row number.
+- The third inner `for` loop prints `//` characters based on the current row number.
+- The fourth inner `for` loop prints `\\` characters based on the current row number.
+- The fifth inner `for` loop prints a number of spaces based on the current row number.
+- The sixth inner `for` loop prints `*` characters based on the current row number.
+- The last line of each row is ended by an `endl` statement to move the cursor to the next line.
+
+4. The `pattern3` function is defined to print the pattern of "Part C" shown below:
+```
+                  1 
+                2 1 2 
+              3 2 1 2 3 
+            4 3 2 1 2 3 4 
+          5 4 3 2 1 2 3 4 5 
+        6 5 4 3 2 1 2 3 4 5 6 
+      7 6 5 4 3 2 1 2 3 4 5 6 7 
+    8 7 6 5 4 3 2 1 2 3 4 5 6 7 8 
+  9 8 7 6 5 4 3 2 1 2 3 4 5 6 7 8 9 
+  8 7 6 5 4 3 2 1 2 3 4 5 6 7 8 
+    7 6 5 4 3 2 1 2 3 4 5 6 7 
+      6 5 4 3 2 1 2 3 4 5 6 
+        5 4 3 2 1 2 3 4 5 
+          4 3 2 1 2 3 4 
+            3 2 1 2 3 
+              
+	      
