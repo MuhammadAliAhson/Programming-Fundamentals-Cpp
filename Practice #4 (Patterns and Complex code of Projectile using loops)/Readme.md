@@ -180,7 +180,28 @@ This program prints a graphical representation of a polynomial function. It prom
 
 ## Practice #4 Q5
 
+# Decimal to Binary, Octal, and Hexadecimal Converter
 
+This program takes an integer in the range of 1 to 256 as input and converts it into binary, octal, and hexadecimal numbers.
+
+## Steps to run the program
+
+1. Open any C/C++ compiler (preferably in Linux/Ubuntu) and create a new file.
+2. Copy the given code and paste it in the file.
+3. Save the file with a ".cpp" extension.
+4. Compile and run the program.
+
+## Explanation of the code
+
+1. The `reverse` function is defined which takes an integer as input and reverses the digits of the integer. It will be used later in the `binary`, `octal`, and `hexadecimal` functions.
+2. The `binary` function takes an integer as input and converts it into a binary number using the division method. The remainder of each division is stored in an array and the binary number is printed by reversing the array using the `reverse` function.
+3. The `octal` function takes an integer as input and converts it into an octal number using the division method. The remainder of each division is stored in an array and the octal number is printed by reversing the array using the `reverse` function.
+4. The `hexadecimal` function takes an integer as input and converts it into a hexadecimal number using the division method. The remainder of each division is stored in an array and the hexadecimal number is printed by reversing the array using the `reverse` function. If the remainder is greater than 9, the corresponding alphabet is printed instead of the number.
+5. The `main` function takes an integer as input and checks whether it is in the range of 1 to 256. If it is, it calls the `binary`, `octal`, and `hexadecimal` functions. If it is not, it prints an error message.
+
+## Output
+
+The output of the program will be the binary, octal, and hexadecimal representations of the entered decimal number.
 
 
 
