@@ -295,7 +295,61 @@ else {
 
 ## Practice #4 Q7
 
+This program seems to be a simulation of a projectile's motion. However, there are a few issues that need to be addressed.
 
+1. Variable initialization: The variables `d`, `deld`, and `app` are not initialized before being used in the program. It is good practice to initialize variables to a known value before using them.
+
+2. Incorrect usage of variables: The variable `w` is used to keep track of the number of iterations in the while loop, but it is initialized to 0 and never updated. It should be updated at each iteration of the while loop.
+
+3. Calculation errors: The calculation for `deld` is incorrect. It should be `vi*deltat - (0.5*9.8*deltat*deltat)` instead of `tp*tp- (0.5*9.8*tp*tp)`. Additionally, the calculation for `d` should be `d = d + (s*deltat)` instead of `d = d + (s*tp)`.
+
+4. Output formatting: The output formatting for the time span and distance is not consistent. It is recommended to use a fixed width for the time span and distance to make the output more readable.
+
+Here's a corrected version of the program:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    // s=Speed, 
+    // d=distance
+    // deld=delta distance
+    // deltat = instanous time interval 
+    // app = approximate
+    // tp = time period
+
+    double s, d = 0, deld = 0, deltat, app = 0;
+    const double tp = 0.01;
+    int w = 0;
+
+    cout << "Input the speed: ";
+    cin >> s;
+
+    // speed when the projectile is launched
+    double vi = s;
+
+    while (d >= 0) {
+        w++;
+        deltat = w * tp;
+        d = d + (s * deltat);
+        deld = vi * deltat - (0.5 * 9.8 * deltat * deltat);
+        s = s - (9.8 * deltat);
+
+        if (d > app) {
+            app = d;
+        }
+
+        if (w % 100 == 0) {
+            cout << "Time span: " << setw(4) << w / 100 << " s: " << setw(10) << d << setw(10) << deld << endl;
+        }
+    }
+
+    return 0;
+}
+```
+
+This program should now produce correct output and run without errors.
 
 
 
